@@ -1,0 +1,156 @@
+@charset "UTG-8";
+
+@font-face {
+    font-family: 'fonth1';
+    src: url(fontes/POSTERABLE.ttf);
+}
+
+@font-face {
+    font-family: 'fonth2';
+    src: url(fontes/BebasNeue-Regular.ttf);
+}
+
+body{
+    background: linear-gradient(to right, rgb(34, 14, 68),black); 
+    margin: 0;
+}
+
+
+.search-box{
+    position: absolute;
+    top: 6%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(34, 14, 68) ;
+    border-radius: 40px;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+border: none;
+background: none;
+outline: none;
+padding: 0;
+color: white;
+font-size: 16px;
+line-height: 20px;
+width: 0;
+transition: 0.3s;
+}
+
+
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    background: rgb(34, 14, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+
+}
+
+.search-box:hover > .search-txt{
+    width: 260px;
+    
+}
+
+
+::-webkit-input-placeholder{
+    color: rgb(115, 47, 231);
+}
+
+nav{
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+nav > a{
+    text-decoration: none;
+    color: rgb(211, 206, 206);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    padding: 30px;
+    transition-duration: 0.5s;
+    
+}
+
+header > h1{
+    font-family: 'fonth1';
+    color: rgb(155, 9, 9);
+    font-size: 3em;
+    padding-left: 23px;
+    
+    }
+
+    section{
+        display: flex;
+        padding-right: 16%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        background-color: rgb(0, 0, 0);
+    }
+        
+    .inicio{
+        padding-top: 5%;
+
+    }
+
+    div > h2{
+        font-size: 2.5em;
+        font-family: 'fonth2';
+        color: rgb(219, 209, 209);
+        padding-left: 30%;
+    }
+
+    div > p{         
+        width: 50%;
+        margin-left: 20%;
+        text-align: justify;         
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        color: rgba(255, 255, 255, 0.938);   
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+        
+        background-color: rgba(139, 139, 139, 0.61);
+        
+    }
+
+    .filmes{
+        font-size: 2.0em;
+        padding-top: 2%;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    .videos{
+        height: 150px;
+        padding: 10px;
+        width: 17em;
+    }
+
+    .categoria-videos{
+    display: flex;
+    overflow: auto;
+    }
+
+    .categoria{
+        background: linear-gradient(45deg,rgb(34, 14, 68),black);
+    }
+
+
