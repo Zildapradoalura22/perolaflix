@@ -1,0 +1,105 @@
+@charset "UTG-8";
+
+@font-face {
+    font-family: 'fonth1';
+    src: url(fontes/POSTERABLE.ttf);
+}
+
+body{
+    background: linear-gradient(to right, rgb(34, 14, 68),black); 
+    margin: 0;
+}
+
+.search-box{
+    position: absolute;
+    top: 6%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(34, 14, 68) ;
+    border-radius: 40px;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+border: none;
+background: none;
+outline: none;
+padding: 0;
+color: white;
+font-size: 16px;
+line-height: 20px;
+width: 0;
+transition: 0.3s;
+}
+
+
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    background: rgb(34, 14, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+
+}
+
+.search-box:hover > .search-txt{
+    width: 260px;
+    
+}
+
+
+::-webkit-input-placeholder{
+    color: rgb(115, 47, 231);
+}
+
+
+header > h1{
+    font-family: 'fonth1';
+    color: rgb(155, 9, 9);
+    font-size: 3em;
+    padding-left: 23px;
+    
+    }
+
+    nav{
+        text-align: center;
+        padding-bottom: 10px;
+        
+    }
+    
+    nav > a{
+        text-decoration: none;
+        color: rgb(211, 206, 206);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        padding: 30px;
+        transition-duration: 0.5s;
+        
+    }
+
+    .videos{
+        height: 190px;
+        padding: 10px;
+        
+    }
+
+    h2{
+        font-size: 2.0em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 15px;
+        color: rgb(211, 206, 206);
+    }
+
+    section{
+        background-color:black;
+        padding-bottom: 50px;
+    }
